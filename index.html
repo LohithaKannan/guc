@@ -1,0 +1,54 @@
+<script type="text/javascript">
+var choice;
+var b;
+b=window.prompt("enter choice: 1 or 2 or 3");
+choice=parseInt(b);
+switch(choice)
+{
+case 1:
+var i,s,a;
+var sum=1;
+a=window.prompt("enter number:");
+s=parseInt(a);
+for(i=s;i>0;i--)
+{
+sum=sum*i;
+}
+document.writeln("the factorial sum of numbers=",sum);
+break;
+case 2:
+var j,p,c;
+var sum1=0;
+c=window.prompt("enter number:");
+p=parseInt(c);
+for(j=1;j<=p;j++)
+{
+sum1=sum1+j;
+}
+document.writeln("the  sum of numbers=",sum1);
+break;
+case 3:
+var k,r,d,prime=0;
+d=window.prompt("enter number:");
+r=parseInt(d);
+for(k=1;k<=r;k++)
+{
+if(r%k==0)
+{
+prime++;
+}
+}
+if(prime==2)
+{
+document.writeln("THE NUMBER IS PRIME");
+}
+else
+{
+document.writeln("THE NUMBER IS NOT PRIME");
+}
+break;
+default:
+document.writeln("choice not found");
+break;
+}
+</script>
